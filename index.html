@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mohammad Khalid | Profile</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* SOCIAL ICONS */
+        .icons {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 50px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon-box {
+            text-align: center;
+            color: var(--clr);
+        }
+
+        .icon-box a {
+            position: relative;
+            width: 65px;
+            height: 65px;
+            background: #111;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: var(--clr);
+            text-decoration: none;
+            transition: 0.4s;
+
+            /* guide border, remove later */
+        }
+
+        .icon-box a::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: var(--clr);
+            opacity: 0;
+            filter: blur(25px);
+            transition: 0.4s;
+        }
+
+        .icon-box a:hover::before {
+            opacity: 1;
+        }
+
+        .icon-box a:hover {
+            box-shadow: 0 0 30px var(--clr), 0 0 60px var(--clr);
+        }
+
+        .icon-box span {
+            display: block;
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            max-width: 750px;
+            margin-top: 40px;
+            padding: 35px 40px;
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #f5c94c;
+            letter-spacing: 1px;
+        }
+
+        .about-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+
+        /* TYPING COLORS */
+        .keyword-blue {
+            color: #4da3ff;
+            font-weight: 700;
+        }
+
+        .keyword-gold {
+            color: #f5c94c;
+            font-weight: 700;
+        }
+
+        .keyword-red {
+            color: #ff4c4c;
+            font-weight: 700;
+        }
+
+        .keyword-green {
+            color: #32cd32;
+            font-weight: 700;
+        }
+
+        /* blinking cursor */
+        #typing-text::after {
+            content: '|';
+            animation: blink 1s infinite;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .icons {
+                gap: 25px;
+                padding: 25px;
+            }
+
+            .icon-box a {
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+            }
+
+            .about-section {
+                padding: 25px 20px;
+                margin-top: 30px;
+            }
+
+            .about-section h2 {
+                font-size: 24px;
+            }
+
+            .about-section p {
+                font-size: 14px;
+            }
+        }
+
+        .resume-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            background: linear-gradient(45deg, #f5c94c, #ff9800);
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .resume-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(245, 201, 76, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SOCIAL ICONS -->
+    <div class="icons">
+        <div class="icon-box" style="--clr:#1877f2">
+            <a href="https://www.facebook.com/share/1Agwb4dQHh/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <span>Facebook</span>
+        </div>
+
+        <div class="icon-box" style="--clr:#fd1d1d">
+            <a href="https://www.instagram.com/ig_zulqarnain.x01?igsh=aW5hNjJlN2t5ZXY5" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <span>Instagram</span>
+        </div>
+
+        <div class="icon-box" style="--clr:#fffc00">
+            <a href="https://www.snapchat.com/add/cheaterboy18?share_id=UOxIfdNA6wk&locale=en-GB" target="_blank">
+                <i class="fa-brands fa-snapchat"></i>
+            </a>
+            <span>Snapchat</span>
+        </div>
+
+        <div class="icon-box" style="--clr:#ff0000">
+            <a href="https://www.youtube.com/@explorepage786" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <span>YouTube</span>
+        </div>
+
+       
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="about-section">
+        <h2>My Background</h2>
+        <p id="typing-text"></p>
+    </div>
+    <a href="resume.pdf" download class="resume-btn">
+        Download Resume
+    </a>
+
+    <!-- TYPING EFFECT SCRIPT -->
+    <script>
+        const target = document.getElementById("typing-text");
+
+        const content = [
+            { text: "Hello! My name is ", style: "" },
+            { text: "MOHAMMAD ZULQARNAIN", style: "keyword-blue" },
+            { text: ". I am an ", style: "" },
+            { text: "INDIAN", style: "keyword-gold" },
+            { text: " and a ", style: "" },
+            { text: "COMPUTER SCIENCE ENGINEER", style: "keyword-red" },
+            { text: " with a strong interest in ", style: "" },
+            { text: "TECHNOLOGY", style: "keyword-green" },
+            { text: ", ", style: "" },
+            { text: "PROGRAMMING", style: "keyword-green" },
+            { text: ", and ", style: "" },
+            { text: "PROBLEM-SOLVING", style: "keyword-green" },
+            { text: ". I enjoy building modern ", style: "" },
+            { text: "WEB APPLICATIONS", style: "keyword-green" },
+            { text: ", learning new ", style: "" },
+            { text: "TECHNOLOGIES", style: "keyword-green" },
+            { text: ", and continuously improving my skills. I believe in ", style: "" },
+            { text: "HARD WORK", style: "keyword-gold" },
+            { text: ", ", style: "" },
+            { text: "CONSISTENCY", style: "keyword-gold" },
+            { text: ", and growing every day as a ", style: "" },
+            { text: "DEVELOPER", style: "keyword-red" },
+            { text: ".", style: "" },
+        ];
+
+        let outerIndex = 0;
+        let innerIndex = 0;
+
+        function typeEffect() {
+            if (outerIndex < content.length) {
+                const part = content[outerIndex];
+                if (innerIndex < part.text.length) {
+                    let span;
+                    if (part.style !== "") {
+                        if (target.lastChild && target.lastChild.className === part.style) {
+                            span = target.lastChild;
+                        } else {
+                            span = document.createElement("span");
+                            span.className = part.style;
+                            target.appendChild(span);
+                        }
+                        span.innerHTML += part.text.charAt(innerIndex);
+                    } else {
+                        target.innerHTML += part.text.charAt(innerIndex);
+                    }
+                    innerIndex++;
+                    setTimeout(typeEffect, 35);
+                } else {
+                    outerIndex++;
+                    innerIndex = 0;
+                    typeEffect();
+                }
+            }
+        }
+
+        typeEffect();
+    </script>
+
+</body>
+
+</html>
